@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import { ref, computed } from "vue";
-import { useQRCode } from "@vueuse/integrations/useQRCode";
 import { useClipboard } from "@vueuse/core";
 
 // Define types for our data structures
@@ -280,10 +279,6 @@ const pastShows = computed(() => {
             (a, b) => parseDate(b.date).getTime() - parseDate(a.date).getTime(),
         ); // Sort in reverse chronological order
 });
-
-// Website URL for QR code
-const websiteUrl = "https://the-standard-deviants.gigready.band";
-const qrCode = useQRCode(websiteUrl);
 
 // Setup clipboard functionality
 const { copy: copyToClipboard, copied } = useClipboard();
