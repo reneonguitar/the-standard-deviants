@@ -45,76 +45,90 @@ const socialLinks: SocialLink[] = [
 // All shows
 const allShows: Show[] = [
     {
-        date: "September 20, 2025",
-        time: "10:30 AM - 12:30 PM",
-        venue: "ALS Charity Walk",
-        location: "NTC Park, Liberty Station, Point Loma, San Diego, CA",
+        date: "November 8, 2025",
+        time: "5:30 PM - 7:30 PM",
+        venue: "Jannafest 2.0 Private Party",
+        location: "Imperial Beach, San Diego, CA",
+        venueUrl: "",
+        mapUrl: "https://maps.app.goo.gl/NJXPEf2KrvYWHMVh7",
+    },
+    {
+        date: "October 5, 2025",
+        time: "6:00 PM - 9:00 PM",
+        venue: "The Cordova Bar",
+        location: "1319 Morena Blvd, San Diego, CA 92110",
         venueUrl:
-            "https://secure.alssandiego.org/site/TR/Endurance/General?team_id=1880&pg=team&fr_id=1090",
-        mapUrl: "https://maps.app.goo.gl/SEXF9fF25fBqVnQD8",
+            "https://www.thecordovabar.com/?utm_source=the_standard_deviants_band&utm_medium=web",
+        mapUrl: "https://maps.app.goo.gl/b27gyVF1L1bMzaMf6",
     },
     {
         date: "September 6, 2025",
-        time: "6:00 PM - 9:00 PM",
+        time: "7:30 PM - 9:00 PM",
         venue: "Good Bar",
-        location: "Point Loma, San Diego, CA",
+        location: "1872 Rosecrans St, San Diego, CA 92106",
         venueUrl:
-            "https://www.facebook.com/permalink.php?story_fbid=pfbid025TaUQ7HFqh5HyhAbUK81Sj9VUVLBVfU7wLouc5SsGU2WuQaWi8W3dQsynRpvA8Sml&id=61576311684143",
-        mapUrl: "https://maps.app.goo.gl/NezkBWmgKPCgD2wa6",
+            "https://www.goodbarsd.com/?utm_source=the_standard_deviants_band&utm_medium=web",
+        mapUrl: "https://maps.app.goo.gl/Cngeao6sgWADdG7r7",
     },
     {
-        date: "June 1, 2025",
-        time: "10:10 AM - 11:50 AM",
-        venue: "San Diego Rock & Roll Marathon",
-        location: "Fifth Avenue & B Street, San Diego, CA",
+        date: "August 4, 2025",
+        time: "11:00 AM - 4:00 PM",
+        venue: "Caddyhack Charity Golf Tournament - Fairbanks Ranch",
+        location: "15150 San Dieguito Rd, Rancho Santa Fe, CA 92067",
         venueUrl:
-            "https://www.runrocknroll.com/san-diego?utm_source=the_standard_deviants&utm_medium=web",
-        mapUrl: "https://maps.app.goo.gl/rhRzWSFLu84nQEGk8",
+            "https://boystomen.org/caddyhack-golf-festival/?utm_source=the_standard_deviants_band&utm_medium=web",
+        mapUrl: "https://maps.app.goo.gl/B5Y4TvHT5qDtg2v5A",
+    },
+    {
+        date: "August 2, 2025",
+        time: "2:00 PM - 5:00 PM",
+        venue: "Renamyfest Private Party",
+        location: "Spanish Landing East, San Diego, CA",
+        venueUrl: "",
+        mapUrl: "https://maps.app.goo.gl/PeoSpgJafb4kyokm6",
+    },
+    {
+        date: "June 28, 2025",
+        time: "4:00 PM - 6:00 PM",
+        venue: "Quin Murphy Foundation Private Party",
+        location: "Chula Vista, San Diego, CA",
+        venueUrl:
+            "https://www.quinmurphyfoundation.com/?utm_source=the_standard_deviants_band&utm_medium=web",
+        mapUrl: "https://maps.app.goo.gl/xiwvS9T3kFutLnEJ8",
     },
     {
         date: "June 7, 2025",
-        time: "4:00 PM - 6:00 PM",
-        venue: "Good bar",
-        location: "Point Loma, San Diego, CA",
+        time: "5:00 PM - 6:00 PM",
+        venue: "Good Bar",
+        location: "1872 Rosecrans St, San Diego, CA 92106",
         venueUrl:
-            "https://www.goodbarsd.com/?utm_source=the_standard_deviants&utm_medium=web",
-        mapUrl: "https://maps.app.goo.gl/NezkBWmgKPCgD2wa6",
+            "https://www.goodbarsd.com/?utm_source=the_standard_deviants_band&utm_medium=web",
+        mapUrl: "https://maps.app.goo.gl/Cngeao6sgWADdG7r7",
     },
     {
-        date: "May 31, 2020",
-        time: "7:00 AM - 10:00 AM",
-        venue: "Bird Park",
-        location: "North Park, San Diego, CA",
+        date: "June 1, 2025",
+        time: "10:00 AM - 11:00 AM",
+        venue: "Rock & Roll Marathon",
+        location: "5th & B Street - Downtown San Diego, CA",
         venueUrl:
-            "https://www.instagram.com/explore/locations/236701974/bird-park/",
-        mapUrl: "https://maps.app.goo.gl/chKL5Q6Xey867AGY9",
+            "https://www.runrocknroll.com/events/san-diego/?utm_source=the_standard_deviants_band&utm_medium=web",
+        mapUrl: "https://maps.app.goo.gl/ihGHaGonRukUHHwU8",
     },
     {
-        date: "June 5, 2022",
-        time: "7:00 AM - 10:00 AM",
-        venue: "Bird Park",
-        location: "North Park, San Diego, CA",
-        venueUrl:
-            "https://www.instagram.com/explore/locations/236701974/bird-park/",
-        mapUrl: "https://maps.app.goo.gl/chKL5Q6Xey867AGY9",
+        date: "November 9, 2024",
+        time: "1:30 PM - 3:30 PM",
+        venue: "Jannafest Private Party",
+        location: "Imperial Beach, San Diego, CA",
+        venueUrl: "",
+        mapUrl: "https://maps.app.goo.gl/NJXPEf2KrvYWHMVh7",
     },
     {
-        date: "June 4, 2023",
-        time: "7:00 AM - 10:00 AM",
-        venue: "Bird Park",
-        location: "North Park, San Diego, CA",
-        venueUrl:
-            "https://www.instagram.com/explore/locations/236701974/bird-park/",
-        mapUrl: "https://maps.app.goo.gl/chKL5Q6Xey867AGY9",
-    },
-    {
-        date: "June 2, 2024",
-        time: "7:00 AM - 10:00 AM",
-        venue: "Bird Park",
-        location: "North Park, San Diego, CA",
-        venueUrl:
-            "https://www.instagram.com/explore/locations/236701974/bird-park/",
-        mapUrl: "https://maps.app.goo.gl/chKL5Q6Xey867AGY9",
+        date: "August 31, 2024",
+        time: "4:00 PM - 5:00 PM",
+        venue: "Renéfest Private Party",
+        location: "South Park, San Diego, CA",
+        venueUrl: "",
+        mapUrl: "https://maps.app.goo.gl/WJKuz2SUodprA1VS9",
     },
 ];
 
@@ -320,15 +334,15 @@ useSeoMeta({
 
 <template>
     <div
-        class="min-h-screen bg-gradient-to-b from-secondary-500 to-secondary-950 dark:from-secondary-500 dark:to-black text-neutral-400 dark:text-neutral-400"
+        class="min-h-screen bg-linear-to-b from-secondary-800 to-secondary-950 dark:from-secondary-800 dark:to-black text-neutral-100 dark:text-neutral-400"
     >
         <div class="container mx-auto px-4 py-12 max-w-3xl">
             <!-- Header with band logo/image -->
             <div class="flex flex-col items-center mb-10">
                 <!-- Placeholder for logo -->
                 <NuxtImg
-                    src="/logo.webp"
-                    width="200"
+                    src="/logo.png"
+                    width="400"
                     height="auto"
                     format="webp"
                     alt="The Standard Deviants"
@@ -336,18 +350,13 @@ useSeoMeta({
                     loading="lazy"
                     sizes="xs:200px sm:200px md:200px lg:200px xl:200px"
                 />
-                <h1
-                    class="text-4xl font-bold text-center mb-2 text-primary-50 dark:text-primary-100 font-serif"
+                <h2
+                    class="text-2xl font-bold text-center mb-2 text-primary-50 dark:text-primary-100 font-serif"
                 >
-                    The Standard Deviants
-                </h1>
+                    San Diego Rock Cover Band
+                </h2>
                 <p
-                    class="text-xl text-center text-neutral-400 dark:text-neutral-400 mb-4"
-                >
-                    Rock Cover Band
-                </p>
-                <p
-                    class="text-center text-neutral-400/80 dark:text-neutral-400/80 max-w-md mb-8"
+                    class="text-center text-neutral-100/80 dark:text-neutral-100/80 max-w-md mb-8"
                 >
                     A fun rock cover band forged from local San Diego musicians.
                     We're professionals by day, rock stars by night, and we
@@ -356,7 +365,7 @@ useSeoMeta({
                     venue near you!
                 </p>
                 <p
-                    class="text-center text-neutral-400/80 dark:text-neutral-400/80 max-w-md mb-8"
+                    class="text-center text-neutral-100/80 dark:text-neutral-100/80 max-w-md mb-8"
                 >
                     Harrison &middot; Ren&eacute; &middot; Steve &middot; Tony
                     &middot; Ritter
@@ -403,7 +412,7 @@ useSeoMeta({
                         <div>{{ show.time }}</div>
                         <div>{{ show.venue }}</div>
                         <div
-                            class="text-sm text-neutral-400/70 dark:text-neutral-400/70"
+                            class="text-sm text-neutral-100/70 dark:text-neutral-100/70"
                         >
                             {{ show.location }}
                         </div>
@@ -452,7 +461,7 @@ useSeoMeta({
                 </div>
                 <div
                     v-else
-                    class="text-neutral-400/70 dark:text-neutral-400/70 italic"
+                    class="text-neutral-100/70 dark:text-neutral-100/70 italic"
                 >
                     No upcoming shows at the moment. Check back soon!
                 </div>
@@ -478,7 +487,7 @@ useSeoMeta({
                         <div>{{ show.time }}</div>
                         <div>{{ show.venue }}</div>
                         <div
-                            class="text-sm text-neutral-400/70 dark:text-neutral-400/70"
+                            class="text-sm text-neutral-100/70 dark:text-neutral-100/70"
                         >
                             {{ show.location }}
                         </div>
@@ -512,6 +521,7 @@ useSeoMeta({
                                 Venue
                             </UButton>
                             <UButton
+                                v-if="show.venueUrl"
                                 @click="downloadCalendar(show)"
                                 size="xl"
                                 class="md:w-auto w-full dark:text-white"
@@ -527,7 +537,7 @@ useSeoMeta({
                 </div>
                 <div
                     v-else
-                    class="text-neutral-400/70 dark:text-neutral-400/70 italic"
+                    class="text-neutral-100/70 dark:text-neutral-100/70 italic"
                 >
                     No past shows to display.
                 </div>

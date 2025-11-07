@@ -2,63 +2,25 @@
 @import "@nuxt/ui";
 
 @theme {
-  --font-serif: 'Chicle', serif;
-  --font-sans: 'Barlow', sans-serif;
+    --font-serif: "Chicle", serif;
+    --font-sans: "Barlow", sans-serif;
 }
 
 /* Make button text white in dark mode */
 .dark .u-button {
-  color: white;
+    color: white;
 }
 
 /* Custom styling for Chicle font */
 .font-serif {
-  letter-spacing: 0.05em;
-  line-height: 1.3;
+    letter-spacing: 0.05em;
+    line-height: 1.3;
 }
 
 h1.font-serif {
-  font-size: 2.75rem; /* Slightly larger than text-4xl */
+    font-size: 2.75rem; /* Slightly larger than text-4xl */
 }
 
 h2.font-serif {
-  font-size: 1.75rem; /* Slightly larger than text-2xl */
-}
-
-@theme static {
-  --color-rust-50: #ffcdbd;
-  --color-rust-100: #ff9c7a;
-  --color-rust-200: #ff6a38;
-  --color-rust-300: #f53d00;
-  --color-rust-400: #8f2400;
-  --color-rust-500: #b42e00;
-  --color-rust-600: #8f2400;
-  --color-rust-700: #6b1b00;
-  --color-rust-800: #471200;
-  --color-rust-900: #240900;
-  --color-rust-950: #120500;
-
-  --color-dark-slate-gray-50: #cde6e6;
-  --color-dark-slate-gray-100: #9ccdcd;
-  --color-dark-slate-gray-200: #6ab4b4;
-  --color-dark-slate-gray-300: #478d8d;
-  --color-dark-slate-gray-400: #2f5d5d;
-  --color-dark-slate-gray-500: #2f5d5d;
-  --color-dark-slate-gray-600: #254949;
-  --color-dark-slate-gray-700: #1c3737;
-  --color-dark-slate-gray-800: #122525;
-  --color-dark-slate-gray-900: #091212;
-  --color-dark-slate-gray-950: #040909;
-
-  --color-dun-50: #f9f5ef;
-  --color-dun-100: #f3ebde;
-  --color-dun-200: #ede1ce;
-  --color-dun-300: #e7d7bd;
-  --color-dun-400: #e1cdad;
-  --color-dun-500: #e1cdad;
-  --color-dun-600: #cba973;
-  --color-dun-700: #ae8440;
-  --color-dun-800: #74582b;
-  --color-dun-900: #3a2c15;
-  --color-dun-950: #1d1608;
+    font-size: 1.75rem; /* Slightly larger than text-2xl */
 }

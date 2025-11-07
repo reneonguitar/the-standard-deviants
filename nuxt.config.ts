@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     "@nuxt/scripts",
     "@nuxt/ui",
     "nuxt-gtag",
+    "@nuxthub/core",
   ],
 
   fonts: {
