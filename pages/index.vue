@@ -575,7 +575,9 @@ useSeoMeta({
                     your friends!
                 </p>
                 <div class="flex flex-col items-center">
-                    <img :src="qrCode" alt="QR Code" class="w-48 h-48 mb-4" />
+                    <ClientOnly>
+                        <QRCode class="mb-4" />
+                    </ClientOnly>
                     <UButton
                         @click="copyToClipboard(websiteUrl)"
                         size="lg"
