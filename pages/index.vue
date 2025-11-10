@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ref, computed } from "vue";
+// QR code generation will be handled manually using the 'qrcode' library
 import { useClipboard } from "@vueuse/core";
 
 // Define types for our data structures
@@ -280,6 +280,9 @@ const pastShows = computed(() => {
         ); // Sort in reverse chronological order
 });
 
+// Website URL for the clipboard
+const websiteUrl = "https://the-standard-deviants.gigready.band";
+
 // Setup clipboard functionality
 const { copy: copyToClipboard, copied } = useClipboard();
 
@@ -290,7 +293,7 @@ useHead({
         {
             name: "description",
             content:
-                "A fun rock cover band forged from local San Diego musicians. We're professionals by day, rock stars by night, and we deliver classic 80s/90s rock anthems with scientific precision. The periodic table of rock - coming soon to a venue near you!",
+                "A fun rock cover band forged from local San Diego musicians. We're professionals by day, rock stars by night, and we deliver well-known 70s/80s/90s/00s rock anthems that deviate from the standard at times. Come see fun erds who rock - coming soon to a venue near you!",
         },
     ],
     link: [
@@ -319,10 +322,10 @@ useHead({
 useSeoMeta({
     title: "The Standard Deviants",
     description:
-        "A fun rock cover band forged from local San Diego musicians. We're professionals by day, rock stars by night, and we deliver classic 80s/90s rock anthems with scientific precision. The periodic table of rock - coming soon to a venue near you!",
+        "A fun rock cover band forged from local San Diego musicians. We're professionals by day, rock stars by night, and we deliver well-known 70s/80s/90s/00s rock anthems that deviate from the standard at times. Come see fun erds who rock - coming soon to a venue near you!",
     ogTitle: "The Standard Deviants",
     ogDescription:
-        "A fun rock cover band forged from local San Diego musicians. We're professionals by day, rock stars by night, and we deliver classic 80s/90s rock anthems with scientific precision. The periodic table of rock - coming soon to a venue near you!",
+        "A fun rock cover band forged from local San Diego musicians. We're professionals by day, rock stars by night, and we deliver well-known 70s/80s/90s/00s rock anthems that deviate from the standard at times. Come see fun erds who rock - coming soon to a venue near you!",
     ogImage: "https://the-standard-deviants.gigready.band/og-logo.png",
 });
 </script>
@@ -334,34 +337,25 @@ useSeoMeta({
         <div class="container mx-auto px-4 py-12 max-w-3xl">
             <!-- Header with band logo/image -->
             <div class="flex flex-col items-center mb-10">
-                <!-- Placeholder for logo -->
-                <NuxtImg
+                <!-- Logo -->
+                <img
                     src="/logo.png"
-                    width="400"
-                    height="auto"
-                    format="webp"
                     alt="The Standard Deviants"
-                    class="mx-auto mb-4 rounded-lg"
-                    loading="lazy"
-                    sizes="xs:200px sm:200px md:200px lg:200px xl:200px"
+                    class="mx-auto mb-12"
                 />
                 <h2
                     class="text-2xl font-bold text-center mb-2 text-primary-50 dark:text-primary-100 font-serif"
                 >
                     San Diego Rock Cover Band
                 </h2>
-                <p
-                    class="text-center text-neutral-100/80 dark:text-neutral-100/80 max-w-md mb-8"
-                >
+                <p class="text-center text-white max-w-md mb-8">
                     A fun rock cover band forged from local San Diego musicians.
                     We're professionals by day, rock stars by night, and we
-                    deliver classic 80s/90s rock anthems with scientific
-                    precision. The periodic table of rock - coming soon to a
-                    venue near you!
+                    deliver well-known 70s/80s/90s/00s rock anthems that deviate
+                    from the standard at times. Come see fun erds who rock -
+                    coming soon to a venue near you!
                 </p>
-                <p
-                    class="text-center text-neutral-100/80 dark:text-neutral-100/80 max-w-md mb-8"
-                >
+                <p class="text-center text-white max-w-md mb-8">
                     Harrison &middot; Ren&eacute; &middot; Steve &middot; Tony
                     &middot; Ritter
                 </p>
@@ -406,9 +400,7 @@ useSeoMeta({
                         <div class="font-bold">{{ show.date }}</div>
                         <div>{{ show.time }}</div>
                         <div>{{ show.venue }}</div>
-                        <div
-                            class="text-sm text-neutral-100/70 dark:text-neutral-100/70"
-                        >
+                        <div class="text-sm text-white dark:text-white">
                             {{ show.location }}
                         </div>
                         <div
@@ -454,10 +446,7 @@ useSeoMeta({
                         </div>
                     </div>
                 </div>
-                <div
-                    v-else
-                    class="text-neutral-100/70 dark:text-neutral-100/70 italic"
-                >
+                <div v-else class="text-white dark:text-white italic">
                     No upcoming shows at the moment. Check back soon!
                 </div>
             </div>
@@ -481,9 +470,7 @@ useSeoMeta({
                         <div class="font-bold">{{ show.date }}</div>
                         <div>{{ show.time }}</div>
                         <div>{{ show.venue }}</div>
-                        <div
-                            class="text-sm text-neutral-100/70 dark:text-neutral-100/70"
-                        >
+                        <div class="text-sm text-white dark:text-white">
                             {{ show.location }}
                         </div>
                         <div
@@ -530,10 +517,7 @@ useSeoMeta({
                         </div>
                     </div>
                 </div>
-                <div
-                    v-else
-                    class="text-neutral-100/70 dark:text-neutral-100/70 italic"
-                >
+                <div v-else class="text-white dark:text-white italic">
                     No past shows to display.
                 </div>
             </div>
@@ -570,9 +554,11 @@ useSeoMeta({
                     your friends!
                 </p>
                 <div class="flex flex-col items-center">
-                    <ClientOnly>
-                        <QRCode class="mb-4" />
-                    </ClientOnly>
+                    <img
+                        src="/qr-code.png"
+                        alt="QR Code"
+                        class="w-48 h-48 mb-4"
+                    />
                     <UButton
                         @click="copyToClipboard(websiteUrl)"
                         size="lg"

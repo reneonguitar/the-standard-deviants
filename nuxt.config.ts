@@ -14,22 +14,7 @@ export default defineNuxtConfig({
     "@nuxthub/core",
   ],
 
-  fonts: {
-    families: [
-      {
-        name: "Barlow",
-        provider: "google",
-        weights: [400, 500, 600, 700],
-      },
-      {
-        name: "Chicle",
-        provider: "google",
-        weights: [400],
-      },
-    ],
-  },
-
   gtag: {
-    // id: 'G-CE1PRNLK0N'
+    id: "G-GYG301XSCD",
   },
 });

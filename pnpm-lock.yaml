@@ -22,19 +22,19 @@ importers:
         version: 0.11.13(@unhead/vue@2.0.19(vue@3.5.23(typescript@5.9.3)))(db0@0.3.4)(ioredis@5.8.2)(magicast@0.5.1)(typescript@5.9.3)(vue@3.5.23(typescript@5.9.3))
       '@nuxt/ui':
         specifier: ^3.1.3
-        version: 3.3.7(@babel/parser@7.28.5)(db0@0.3.4)(embla-carousel@8.6.0)(ioredis@5.8.2)(magicast@0.5.1)(qrcode@1.5.4)(typescript@5.9.3)(valibot@1.1.0(typescript@5.9.3))(vite@7.2.1(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.1)(yaml@2.8.1))(vue-router@4.6.3(vue@3.5.23(typescript@5.9.3)))(vue@3.5.23(typescript@5.9.3))
+        version: 3.3.7(@babel/parser@7.28.5)(db0@0.3.4)(embla-carousel@8.6.0)(ioredis@5.8.2)(magicast@0.5.1)(qrcode@1.5.4)(typescript@5.9.3)(valibot@1.1.0(typescript@5.9.3))(vite@7.2.1(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.1)(yaml@2.8.1))(vue-router@4.6.3(vue@3.5.23(typescript@5.9.3)))(vue@3.5.23(typescript@5.9.3))(zod@3.25.76)
+      '@nuxthub/core':
+        specifier: ^0.9.0
+        version: 0.9.0(db0@0.3.4)(ioredis@5.8.2)(magicast@0.5.1)(vite@7.2.1(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.1)(yaml@2.8.1))
       '@unhead/vue':
         specifier: ^2.0.10
         version: 2.0.19(vue@3.5.23(typescript@5.9.3))
+      '@vueuse/core':
+        specifier: ^14.0.0
+        version: 14.0.0(vue@3.5.23(typescript@5.9.3))
       nuxt:
         specifier: ^3.17.4
         version: 3.20.0(@parcel/watcher@2.5.1)(@vue/compiler-sfc@3.5.23)(db0@0.3.4)(ioredis@5.8.2)(lightningcss@1.30.2)(magicast@0.5.1)(rollup@4.52.5)(terser@5.44.1)(typescript@5.9.3)(vite@7.2.1(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.1)(yaml@2.8.1))(yaml@2.8.1)
-      qrcode:
-        specifier: ^1.5.4
-        version: 1.5.4
-      qrcode-vue:
-        specifier: ^1.2.0
-        version: 1.2.0
       typescript:
         specifier: ^5.8.3
         version: 5.9.3
@@ -51,6 +51,9 @@ importers:
       '@iconify-json/simple-icons':
         specifier: ^1.2.57
         version: 1.2.57
+      '@vueuse/integrations':
+        specifier: ^14.0.0
+        version: 14.0.0(fuse.js@7.1.0)(qrcode@1.5.4)(vue@3.5.23(typescript@5.9.3))
       autoprefixer:
         specifier: ^10.4.21
         version: 10.4.21(postcss@8.5.6)
@@ -202,6 +205,9 @@ packages:
   '@cloudflare/kv-asset-handler@0.4.0':
     resolution: {integrity: sha512-+tv3z+SPp+gqTIcImN9o0hqE9xyfQjI1XD9pL6NuKjua9B1y7mNYv0S9cP+QEbA4ppVgGZEmKOvHX5G5Ei1CVA==}
     engines: {node: '>=18.0.0'}
+
+  '@cloudflare/workers-types@4.20251107.0':
+    resolution: {integrity: sha512-4y3U2kDxzAMKthjx6iIlxY2oA3l5FVP1WR2Zkz1j0Cx0RI5P1DZknSV5WP86i2anE5eal+pmtzvCO4oZWgcgtA==}
 
   '@dxup/nuxt@0.1.1':
     resolution: {integrity: sha512-ZQWCoeK4fQYgeP/xs+ldOMJHhd+7BSbx5JAYw0PEvbCfY2VLhz8sZDPtnSO5ur+o17wjApHc/DUTOqF8j+9Zag==}
@@ -588,6 +594,9 @@ packages:
     peerDependenciesMeta:
       rolldown:
         optional: true
+
+  '@nuxthub/core@0.9.0':
+    resolution: {integrity: sha512-K8GkVcJn1ZoHV9xBiDrRPtBHxlzfysVEXGhdAJ/cR37B43UuWucl9pWKlA59f3VAf6lC8iR/hn3+2qlurcK9Ug==}
 
   '@nuxtjs/color-mode@3.5.2':
     resolution: {integrity: sha512-cC6RfgZh3guHBMLLjrBB2Uti5eUoGM9KyauOaYS9ETmxNWBMTvpgjvSiSJp1OFljIXPIqVTJ3xtJpSNZiO3ZaA==}
@@ -1310,6 +1319,9 @@ packages:
     peerDependencies:
       vue: '>=3.5.18'
 
+  '@uploadthing/mime-types@0.3.6':
+    resolution: {integrity: sha512-t3tTzgwFV9+1D7lNDYc7Lr7kBwotHaX0ZsvoCGe7xGnXKo9z0jG2Sjl/msll12FeoLj77nyhsxevXyGpQDBvLg==}
+
   '@vercel/nft@0.30.3':
     resolution: {integrity: sha512-UEq+eF0ocEf9WQCV1gktxKhha36KDs7jln5qii6UpPf5clMqDc0p3E7d9l2Smx0i9Pm1qpq4S4lLfNl97bbv6w==}
     engines: {node: '>=18'}
@@ -1422,8 +1434,55 @@ packages:
     peerDependencies:
       vue: ^3.5.0
 
+  '@vueuse/core@14.0.0':
+    resolution: {integrity: sha512-d6tKRWkZE8IQElX2aHBxXOMD478fHIYV+Dzm2y9Ag122ICBpNKtGICiXKOhWU3L1kKdttDD9dCMS4bGP3jhCTQ==}
+    peerDependencies:
+      vue: ^3.5.0
+
   '@vueuse/integrations@13.9.0':
     resolution: {integrity: sha512-SDobKBbPIOe0cVL7QxMzGkuUGHvWTdihi9zOrrWaWUgFKe15cwEcwfWmgrcNzjT6kHnNmWuTajPHoIzUjYNYYQ==}
+    peerDependencies:
+      async-validator: ^4
+      axios: ^1
+      change-case: ^5
+      drauu: ^0.4
+      focus-trap: ^7
+      fuse.js: ^7
+      idb-keyval: ^6
+      jwt-decode: ^4
+      nprogress: ^0.2
+      qrcode: ^1.5
+      sortablejs: ^1
+      universal-cookie: ^7 || ^8
+      vue: ^3.5.0
+    peerDependenciesMeta:
+      async-validator:
+        optional: true
+      axios:
+        optional: true
+      change-case:
+        optional: true
+      drauu:
+        optional: true
+      focus-trap:
+        optional: true
+      fuse.js:
+        optional: true
+      idb-keyval:
+        optional: true
+      jwt-decode:
+        optional: true
+      nprogress:
+        optional: true
+      qrcode:
+        optional: true
+      sortablejs:
+        optional: true
+      universal-cookie:
+        optional: true
+
+  '@vueuse/integrations@14.0.0':
+    resolution: {integrity: sha512-5A0X7q9qyLtM3xyghq5nK/NEESf7cpcZlkQgXTMuW4JWiAMYxc1ImdhhGrk4negFBsq3ejvAlRmLdNrkcTzk1Q==}
     peerDependencies:
       async-validator: ^4
       axios: ^1
@@ -1473,6 +1532,9 @@ packages:
   '@vueuse/metadata@13.9.0':
     resolution: {integrity: sha512-1AFRvuiGphfF7yWixZa0KwjYH8ulyjDCC0aFgrGRz8+P4kvDFSdXLVfTk5xAN9wEuD1J6z4/myMoYbnHoX07zg==}
 
+  '@vueuse/metadata@14.0.0':
+    resolution: {integrity: sha512-6yoGqbJcMldVCevkFiHDBTB1V5Hq+G/haPlGIuaFZHpXC0HADB0EN1ryQAAceiW+ryS3niUwvdFbGiqHqBrfVA==}
+
   '@vueuse/shared@10.11.1':
     resolution: {integrity: sha512-LHpC8711VFZlDaYUXEBbFBCQ7GS3dVU9mjOhhMhXP6txTV4EhYQg/KGnQuvt/sPAtoUKq7VVUnL6mVtFoL42sA==}
 
@@ -1481,6 +1543,11 @@ packages:
 
   '@vueuse/shared@13.9.0':
     resolution: {integrity: sha512-e89uuTLMh0U5cZ9iDpEI2senqPGfbPRTHM/0AaQkcxnpqjkZqDYP8rpfm7edOz8s+pOCOROEy1PIveSW8+fL5g==}
+    peerDependencies:
+      vue: ^3.5.0
+
+  '@vueuse/shared@14.0.0':
+    resolution: {integrity: sha512-mTCA0uczBgurRlwVaQHfG0Ja7UdGe4g9mwffiJmvLiTtp1G4AQyIjej6si/k8c8pUwTfVpNufck+23gXptPAkw==}
     peerDependencies:
       vue: ^3.5.0
 
@@ -2690,6 +2757,9 @@ packages:
   napi-build-utils@2.0.0:
     resolution: {integrity: sha512-GEbrYkbfF7MoNaoh2iGG84Mnf/WZfB0GdGEsM8wz7Expx/LlWf5U8t9nvJKXSp3qr5IsEbK04cBGhol/KwOsWA==}
 
+  nitro-cloudflare-dev@0.2.2:
+    resolution: {integrity: sha512-aZfNTVdgXPQeAmXW0Tw8hm3usAHr4qVG4Bg3WhHBGeZYuXr9OyT04Ztb+STkMzhyaXvfMHViAaPUPg06iAYqag==}
+
   nitropack@2.12.9:
     resolution: {integrity: sha512-t6qqNBn2UDGMWogQuORjbL2UPevB8PvIPsPHmqvWpeGOlPr4P8Oc5oA8t3wFwGmaolM2M/s2SwT23nx9yARmOg==}
     engines: {node: ^20.19.0 || >=22.12.0}
@@ -3116,12 +3186,6 @@ packages:
 
   pump@3.0.3:
     resolution: {integrity: sha512-todwxLMY7/heScKmntwQG8CXVkWUOdYxIvY2s0VWAAMh/nd8SoYiRaKjlr7+iCs984f2P8zvrfWcDDYVb73NfA==}
-
-  qr.js@0.0.0:
-    resolution: {integrity: sha512-c4iYnWb+k2E+vYpRimHqSu575b1/wKl4XFeJGpFmrJQz5I88v9aY2czh7s0w36srfCM1sXgC/xpoJz5dJfq+OQ==}
-
-  qrcode-vue@1.2.0:
-    resolution: {integrity: sha512-djGZRrXCVA/mxHJvhYXdYN2eeKrVtu+Yi0pYRuE02dbj5R3Xt4uyXa5iM3dgiEQ85r5p7m6nYFRAJaayMMwbqg==}
 
   qrcode@1.5.4:
     resolution: {integrity: sha512-1ca71Zgiu6ORjHqFBDpnSMTR2ReToX4l1Au1VFLyVeBTFavzQnv5JxMFr3ukHVKpSrSA2MCk0lNJSykjUfz7Zg==}
@@ -3967,6 +4031,9 @@ packages:
     resolution: {integrity: sha512-zK7YHHz4ZXpW89AHXUPbQVGKI7uvkd3hzusTdotCg1UxyaVtg0zFJSTfW/Dq5f7OBBVnq6cZIaC8Ti4hb6dtCA==}
     engines: {node: '>= 14'}
 
+  zod@3.25.76:
+    resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
+
 snapshots:
 
   '@alloc/quick-lru@5.2.0': {}
@@ -4158,6 +4225,8 @@ snapshots:
   '@cloudflare/kv-asset-handler@0.4.0':
     dependencies:
       mime: 3.0.0
+
+  '@cloudflare/workers-types@4.20251107.0': {}
 
   '@dxup/nuxt@0.1.1(magicast@0.5.1)':
     dependencies:
@@ -4829,7 +4898,7 @@ snapshots:
     transitivePeerDependencies:
       - magicast
 
-  '@nuxt/ui@3.3.7(@babel/parser@7.28.5)(db0@0.3.4)(embla-carousel@8.6.0)(ioredis@5.8.2)(magicast@0.5.1)(qrcode@1.5.4)(typescript@5.9.3)(valibot@1.1.0(typescript@5.9.3))(vite@7.2.1(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.1)(yaml@2.8.1))(vue-router@4.6.3(vue@3.5.23(typescript@5.9.3)))(vue@3.5.23(typescript@5.9.3))':
+  '@nuxt/ui@3.3.7(@babel/parser@7.28.5)(db0@0.3.4)(embla-carousel@8.6.0)(ioredis@5.8.2)(magicast@0.5.1)(qrcode@1.5.4)(typescript@5.9.3)(valibot@1.1.0(typescript@5.9.3))(vite@7.2.1(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.1)(yaml@2.8.1))(vue-router@4.6.3(vue@3.5.23(typescript@5.9.3)))(vue@3.5.23(typescript@5.9.3))(zod@3.25.76)':
     dependencies:
       '@iconify/vue': 5.0.0(vue@3.5.23(typescript@5.9.3))
       '@internationalized/date': 3.10.0
@@ -4878,6 +4947,7 @@ snapshots:
     optionalDependencies:
       valibot: 1.1.0(typescript@5.9.3)
       vue-router: 4.6.3(vue@3.5.23(typescript@5.9.3))
+      zod: 3.25.76
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -4978,6 +5048,50 @@ snapshots:
       - vti
       - vue-tsc
       - yaml
+
+  '@nuxthub/core@0.9.0(db0@0.3.4)(ioredis@5.8.2)(magicast@0.5.1)(vite@7.2.1(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.1)(yaml@2.8.1))':
+    dependencies:
+      '@cloudflare/workers-types': 4.20251107.0
+      '@nuxt/devtools-kit': 2.7.0(magicast@0.5.1)(vite@7.2.1(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.1)(yaml@2.8.1))
+      '@nuxt/kit': 3.20.0(magicast@0.5.1)
+      '@uploadthing/mime-types': 0.3.6
+      citty: 0.1.6
+      confbox: 0.2.2
+      defu: 6.1.4
+      destr: 2.0.5
+      h3: 1.15.4
+      mime: 4.1.0
+      nitro-cloudflare-dev: 0.2.2
+      ofetch: 1.5.1
+      pathe: 2.0.3
+      pkg-types: 2.3.0
+      std-env: 3.10.0
+      ufo: 1.6.1
+      uncrypto: 0.1.3
+      unstorage: 1.17.2(db0@0.3.4)(ioredis@5.8.2)
+      zod: 3.25.76
+    transitivePeerDependencies:
+      - '@azure/app-configuration'
+      - '@azure/cosmos'
+      - '@azure/data-tables'
+      - '@azure/identity'
+      - '@azure/keyvault-secrets'
+      - '@azure/storage-blob'
+      - '@capacitor/preferences'
+      - '@deno/kv'
+      - '@netlify/blobs'
+      - '@planetscale/database'
+      - '@upstash/redis'
+      - '@vercel/blob'
+      - '@vercel/functions'
+      - '@vercel/kv'
+      - aws4fetch
+      - db0
+      - idb-keyval
+      - ioredis
+      - magicast
+      - uploadthing
+      - vite
 
   '@nuxtjs/color-mode@3.5.2(magicast@0.5.1)':
     dependencies:
@@ -5474,6 +5588,8 @@ snapshots:
       unhead: 2.0.19
       vue: 3.5.23(typescript@5.9.3)
 
+  '@uploadthing/mime-types@0.3.6': {}
+
   '@vercel/nft@0.30.3(rollup@4.52.5)':
     dependencies:
       '@mapbox/node-pre-gyp': 2.0.0
@@ -5676,10 +5792,26 @@ snapshots:
       '@vueuse/shared': 13.9.0(vue@3.5.23(typescript@5.9.3))
       vue: 3.5.23(typescript@5.9.3)
 
+  '@vueuse/core@14.0.0(vue@3.5.23(typescript@5.9.3))':
+    dependencies:
+      '@types/web-bluetooth': 0.0.21
+      '@vueuse/metadata': 14.0.0
+      '@vueuse/shared': 14.0.0(vue@3.5.23(typescript@5.9.3))
+      vue: 3.5.23(typescript@5.9.3)
+
   '@vueuse/integrations@13.9.0(fuse.js@7.1.0)(qrcode@1.5.4)(vue@3.5.23(typescript@5.9.3))':
     dependencies:
       '@vueuse/core': 13.9.0(vue@3.5.23(typescript@5.9.3))
       '@vueuse/shared': 13.9.0(vue@3.5.23(typescript@5.9.3))
+      vue: 3.5.23(typescript@5.9.3)
+    optionalDependencies:
+      fuse.js: 7.1.0
+      qrcode: 1.5.4
+
+  '@vueuse/integrations@14.0.0(fuse.js@7.1.0)(qrcode@1.5.4)(vue@3.5.23(typescript@5.9.3))':
+    dependencies:
+      '@vueuse/core': 14.0.0(vue@3.5.23(typescript@5.9.3))
+      '@vueuse/shared': 14.0.0(vue@3.5.23(typescript@5.9.3))
       vue: 3.5.23(typescript@5.9.3)
     optionalDependencies:
       fuse.js: 7.1.0
@@ -5690,6 +5822,8 @@ snapshots:
   '@vueuse/metadata@12.8.2': {}
 
   '@vueuse/metadata@13.9.0': {}
+
+  '@vueuse/metadata@14.0.0': {}
 
   '@vueuse/shared@10.11.1(vue@3.5.23(typescript@5.9.3))':
     dependencies:
@@ -5705,6 +5839,10 @@ snapshots:
       - typescript
 
   '@vueuse/shared@13.9.0(vue@3.5.23(typescript@5.9.3))':
+    dependencies:
+      vue: 3.5.23(typescript@5.9.3)
+
+  '@vueuse/shared@14.0.0(vue@3.5.23(typescript@5.9.3))':
     dependencies:
       vue: 3.5.23(typescript@5.9.3)
 
@@ -5929,7 +6067,8 @@ snapshots:
 
   cac@6.7.14: {}
 
-  camelcase@5.3.1: {}
+  camelcase@5.3.1:
+    optional: true
 
   caniuse-api@3.0.0:
     dependencies:
@@ -5964,6 +6103,7 @@ snapshots:
       string-width: 4.2.3
       strip-ansi: 6.0.1
       wrap-ansi: 6.2.0
+    optional: true
 
   cliui@8.0.1:
     dependencies:
@@ -6154,7 +6294,8 @@ snapshots:
     dependencies:
       ms: 2.1.3
 
-  decamelize@1.2.0: {}
+  decamelize@1.2.0:
+    optional: true
 
   decompress-response@6.0.0:
     dependencies:
@@ -6195,7 +6336,8 @@ snapshots:
 
   diff@8.0.2: {}
 
-  dijkstrajs@1.0.3: {}
+  dijkstrajs@1.0.3:
+    optional: true
 
   dom-serializer@2.0.0:
     dependencies:
@@ -6401,6 +6543,7 @@ snapshots:
     dependencies:
       locate-path: 5.0.0
       path-exists: 4.0.0
+    optional: true
 
   fontaine@0.6.0:
     dependencies:
@@ -6814,6 +6957,7 @@ snapshots:
   locate-path@5.0.0:
     dependencies:
       p-locate: 4.1.0
+    optional: true
 
   lodash.defaults@4.2.0: {}
 
@@ -6937,6 +7081,12 @@ snapshots:
 
   napi-build-utils@2.0.0:
     optional: true
+
+  nitro-cloudflare-dev@0.2.2:
+    dependencies:
+      consola: 3.4.2
+      mlly: 1.8.0
+      pkg-types: 2.3.0
 
   nitropack@2.12.9:
     dependencies:
@@ -7321,12 +7471,15 @@ snapshots:
   p-limit@2.3.0:
     dependencies:
       p-try: 2.2.0
+    optional: true
 
   p-locate@4.1.0:
     dependencies:
       p-limit: 2.3.0
+    optional: true
 
-  p-try@2.2.0: {}
+  p-try@2.2.0:
+    optional: true
 
   package-json-from-dist@1.0.1: {}
 
@@ -7347,7 +7500,8 @@ snapshots:
 
   path-browserify@1.0.1: {}
 
-  path-exists@4.0.0: {}
+  path-exists@4.0.0:
+    optional: true
 
   path-key@3.1.1: {}
 
@@ -7388,7 +7542,8 @@ snapshots:
       exsolve: 1.0.7
       pathe: 2.0.3
 
-  pngjs@5.0.0: {}
+  pngjs@5.0.0:
+    optional: true
 
   postcss-calc@10.1.1(postcss@8.5.6):
     dependencies:
@@ -7587,17 +7742,12 @@ snapshots:
       once: 1.4.0
     optional: true
 
-  qr.js@0.0.0: {}
-
-  qrcode-vue@1.2.0:
-    dependencies:
-      qr.js: 0.0.0
-
   qrcode@1.5.4:
     dependencies:
       dijkstrajs: 1.0.3
       pngjs: 5.0.0
       yargs: 15.4.1
+    optional: true
 
   quansync@0.2.11: {}
 
@@ -7682,7 +7832,8 @@ snapshots:
 
   require-directory@2.1.1: {}
 
-  require-main-filename@2.0.0: {}
+  require-main-filename@2.0.0:
+    optional: true
 
   resolve-from@5.0.0: {}
 
@@ -7790,7 +7941,8 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  set-blocking@2.0.0: {}
+  set-blocking@2.0.0:
+    optional: true
 
   setprototypeof@1.2.0: {}
 
@@ -8386,7 +8538,8 @@ snapshots:
 
   wheel-gestures@2.2.48: {}
 
-  which-module@2.0.1: {}
+  which-module@2.0.1:
+    optional: true
 
   which@2.0.2:
     dependencies:
@@ -8401,6 +8554,7 @@ snapshots:
       ansi-styles: 4.3.0
       string-width: 4.2.3
       strip-ansi: 6.0.1
+    optional: true
 
   wrap-ansi@7.0.0:
     dependencies:
@@ -8429,7 +8583,8 @@ snapshots:
       cssfilter: 0.0.10
     optional: true
 
-  y18n@4.0.3: {}
+  y18n@4.0.3:
+    optional: true
 
   y18n@5.0.8: {}
 
@@ -8443,6 +8598,7 @@ snapshots:
     dependencies:
       camelcase: 5.3.1
       decamelize: 1.2.0
+    optional: true
 
   yargs-parser@21.1.1: {}
 
@@ -8459,6 +8615,7 @@ snapshots:
       which-module: 2.0.1
       y18n: 4.0.3
       yargs-parser: 18.1.3
+    optional: true
 
   yargs@17.7.2:
     dependencies:
@@ -8488,3 +8645,5 @@ snapshots:
       archiver-utils: 5.0.2
       compress-commons: 6.0.2
       readable-stream: 4.7.0
+
+  zod@3.25.76: {}

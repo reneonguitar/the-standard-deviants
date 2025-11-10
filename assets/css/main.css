@@ -2,8 +2,8 @@
 @import "@nuxt/ui";
 
 @theme {
-    --font-serif: "Chicle", serif;
-    --font-sans: "Barlow", sans-serif;
+    --font-serif: "Orbitron", serif;
+    --font-sans: "Space Grotesk", sans-serif;
 }
 
 /* Make button text white in dark mode */
