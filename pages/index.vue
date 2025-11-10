@@ -293,7 +293,7 @@ useHead({
         {
             name: "description",
             content:
-                "A fun rock cover band forged from local San Diego musicians. We're professionals by day, rock stars by night, and we deliver well-known 70s/80s/90s/00s rock anthems that deviate from the standard at times. Come see fun erds who rock - coming soon to a venue near you!",
+                "A fun rock cover band forged from local San Diego musicians. We're professionals by day, rock stars by night, and we deliver well-known 70s/80s/90s/00s rock anthems that deviate from the standard at times. Come see fun nerds who rock - coming soon to a venue near you!",
         },
     ],
     link: [
@@ -322,10 +322,10 @@ useHead({
 useSeoMeta({
     title: "The Standard Deviants",
     description:
-        "A fun rock cover band forged from local San Diego musicians. We're professionals by day, rock stars by night, and we deliver well-known 70s/80s/90s/00s rock anthems that deviate from the standard at times. Come see fun erds who rock - coming soon to a venue near you!",
+        "A fun rock cover band forged from local San Diego musicians. We're professionals by day, rock stars by night, and we deliver well-known 70s/80s/90s/00s rock anthems that deviate from the standard at times. Come see fun nerds who rock - coming soon to a venue near you!",
     ogTitle: "The Standard Deviants",
     ogDescription:
-        "A fun rock cover band forged from local San Diego musicians. We're professionals by day, rock stars by night, and we deliver well-known 70s/80s/90s/00s rock anthems that deviate from the standard at times. Come see fun erds who rock - coming soon to a venue near you!",
+        "A fun rock cover band forged from local San Diego musicians. We're professionals by day, rock stars by night, and we deliver well-known 70s/80s/90s/00s rock anthems that deviate from the standard at times. Come see fun nerds who rock - coming soon to a venue near you!",
     ogImage: "https://the-standard-deviants.gigready.band/og-logo.png",
 });
 </script>
@@ -352,7 +352,7 @@ useSeoMeta({
                     A fun rock cover band forged from local San Diego musicians.
                     We're professionals by day, rock stars by night, and we
                     deliver well-known 70s/80s/90s/00s rock anthems that deviate
-                    from the standard at times. Come see fun erds who rock -
+                    from the standard at times. Come see fun nerds who rock -
                     coming soon to a venue near you!
                 </p>
                 <p class="text-center text-white max-w-md mb-8">
