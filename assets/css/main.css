@@ -11,6 +11,10 @@
     color: white;
 }
 
+* {
+    color: white;
+}
+
 /* Custom styling for Chicle font */
 .font-serif {
     letter-spacing: 0.05em;
